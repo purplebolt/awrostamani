@@ -11,6 +11,7 @@
      **RUN** `docker cp code webcontainer:/var/www/html/app`
   -  STEP 4
      **RUN** `docker exec -it webcontainer install-magento` and wait till installation is complete
+> **Remember to add `magento2.local 127.0.0.1` to host file**
 
 # USAGE
 ### Browsing car catalog
