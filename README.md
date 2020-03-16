@@ -1,10 +1,10 @@
-# CAR API INTERGRATiON MODULE MODULE
+# CAR API INTERGRATION MODULE
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ### INSTALLATION
   -  STEP 1
-    Clone this repository and RUN `cd Awrostamani`.
+    Clone this repository and RUN `cd awrostamani`.
   -  STEP 2 
      **RUN** `docker-compose up -d` and wait for all component to be installed
   -  STEP 3
