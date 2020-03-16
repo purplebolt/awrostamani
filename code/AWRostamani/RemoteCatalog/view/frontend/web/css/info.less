@@ -1,0 +1,162 @@
+.row-item {
+    display:flex;
+
+    .column-item {
+
+    }
+
+    .column-item.center-item{
+        flex:0.9;
+        position:relative;
+
+        .image-container{
+            height: 600px;
+            -webkit-background-size: cover;
+            background-size: cover;
+            border-radius: 10px;
+            position:relative;
+            .overlay{
+                position:absolute;
+                z-index: 5;
+                background: rgba(0, 0, 0, 0.4);
+                height: 600px;
+                width:100%;
+                border-radius: 10px;
+                .shares{
+
+                    .facebook-share, .twitter-share, .linkedin-share{
+
+                        position: absolute;
+                        right:20px;
+
+                        .share-link{
+                            display: block;
+                            padding: 5px 20px 5px 50px;
+                            margin: 0 auto;
+                            box-sizing: border-box;
+                            max-width: 300px;
+                            position: relative;
+                            border-radius: 6px;
+                            i {
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: 12px;
+                                font-size: 28px;
+                                line-height: 40px;
+                                color: inherit;
+                                font-weight: 700;
+                            }
+                        }
+                        .textshare {
+                            display: block;
+                            font-size: 20px;
+                            line-height: 30px;
+                            font-weight: 700;
+                            color: inherit;
+                        }
+                        .facebook{
+                            background-color: #4E4990;
+                            color: white;
+                        }
+
+                        .twitter{
+                            background-color: #0098F4;
+                            color: white;
+                        }
+
+                        .linkedin{
+                            background-color: #0067b1;
+                            color: white;
+                        }
+                    }
+
+                    .facebook-share {
+                        position: absolute;
+                        top:20px;
+                        right:20px;
+                    }
+
+                    .twitter-share {
+                        top:80px;
+                    }
+
+                    .linkedin-share {
+                        top:140px;
+                    }
+
+                }
+                .control-button-container{
+                    border-top: solid 1px #F5F5F5;
+                    width:100%;
+                    height: 60px;
+                    bottom: 0;
+                    position: absolute;
+                    .next-button, .previous-button{
+                        background-color: white;
+                        color:black;
+                        padding: 10px 20px;
+                        margin:12px 10px;
+                        float:right;
+                    }
+                }
+                .item-description{
+                    bottom:70px;
+                    font-weight: bolder;
+                    font-size: 26px;
+                    position: absolute;
+                    color: white;
+                    padding:5px 20px;
+                    background-color: black;
+                    opacity: 0.3;
+                }
+            }
+         }
+    }
+
+    .column-item.details-item{
+        flex:1;
+        display:flex;
+        margin-top:20px;
+        justify-content: center;
+        .attributes-container-one, .attributes-container-two{
+
+            border: 1px solid #CCC;
+            padding: 5px;
+            border-radius: 10px;
+
+            .attribute-item{
+                background-color: #F5F5F5;
+                border-top: 1px solid #CCC;
+                border-bottom: 1px solid #CCC;
+                padding: 3px 7px 3px 7px;
+                list-style: none;
+                min-height: 25px;
+                .attribute-label{
+                    font-weight: bold;
+                    float: left;
+                }
+                .attribute-value{
+                    float: right;
+                }
+            }
+        }
+
+        .first{
+            flex:0.4;
+            align-self: start;
+            margin-block-start: 0px;
+        }
+        .second{
+            flex:0.4;
+            align-self: end;
+        }
+        .right-padding, .left-padding{
+            flex:0.2;
+        }
+    }
+
+    .column-item.nav-item{
+        flex:0.05
+    }
+}

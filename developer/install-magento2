@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+su www-data <<EOSU
+
+COPY AwRostamanix /var/www/html/app/code
+
+EOSU

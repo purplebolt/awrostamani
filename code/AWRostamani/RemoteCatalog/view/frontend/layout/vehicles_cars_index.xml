@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  src_type="url" rel="stylesheet" type="text/css"  />
+        <css src="AWRostamani_RemoteCatalog::css/info.css" rel="stylesheet" type="text/css"  />
+        <css src="https://fonts.googleapis.com/css?family=Open+Sans:400,700"  src_type="url" rel="stylesheet" type="text/css"  />
+    </head>
+    <body>
+        <referenceBlock name="content">
+            <block name="cars.listing.page" template="AWRostamani_RemoteCatalog::info/info.phtml">
+                <arguments>
+                    <argument name="cars_view_model" xsi:type="object">AWRostamani\RemoteCatalog\ViewModel\CarsViewModel</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+
+</page>

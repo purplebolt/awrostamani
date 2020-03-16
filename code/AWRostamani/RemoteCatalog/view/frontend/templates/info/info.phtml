@@ -1,0 +1,90 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: BOBLEE
+ * Date: 12/03/2020
+ * Time: 10:00 AM
+ */
+$data = $block->getCarsViewModel()->retrieve();
+?>
+
+
+<div class="">
+    <div class="row-item">
+        <div class="column-item nav-item"></div>
+        <div class="column-item center-item">
+            <div class="image-container">
+                <div class="overlay">
+                    <div class = "shares">
+
+                        <div class="facebook-share">
+                            <a href="#"
+                               class="share-link facebook"
+                               target="_blank">
+                                <i class="fa fa-facebook"></i><span class="textshare">Share</span>
+                            </a>
+                        </div>
+
+                        <div class="twitter-share">
+                            <a href="#"
+                               class="share-link twitter"
+                               target="_blank">
+                                <i class="fa fa-twitter"></i><span class="textshare">Tweet</span>
+                            </a>
+                        </div>
+
+
+                        <div class="linkedin-share">
+                            <a href="#"
+                               class="share-link linkedin"
+                               target="_blank">
+                                <i class="fa fa-linkedin"></i><span class="textshare">Share</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="item-description"></div>
+                    <div class="control-button-container">
+                        <button class="next-button">NEXT CAR</button>
+                        <button class="previous-button">PREVIOUS CAR</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column-item nav-item"></div>
+    </div>
+    <div class="row-item">
+        <div class="column-item details-item">
+            <ul class="attributes-container-one first">
+
+            </ul>
+            <ul class="attributes-container-two second">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+require(
+    [
+        'jquery',
+        'AWRostamani_RemoteCatalog/js/model/loader-module'
+    ],
+    function ($, loader) {
+        loader.init(<?= json_encode($data); ?>);
+
+        $('.next-button').on('click', function () {
+            loader.next();
+        })
+        $('.previous-button').on('click', function () {
+            loader.previous();
+        })
+
+
+    })
+</script>

@@ -1,0 +1,16 @@
+{
+  "name": "awrostamani/magento2-module-remotecatalog",
+  "description": "AWRostamani Magento2 module RemoteCatalog",
+  "require": {
+    "php": "~7.0.0"
+  },
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "AWRostamani\\RemoteCatalog\\": ""
+    }
+  }
+}
